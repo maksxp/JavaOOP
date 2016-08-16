@@ -11,9 +11,6 @@ public CatalogMonitor(File catalog) {
 	thr=new Thread(this);
 	thr.start();
 	}
-public int check (File catalog){
-	return catalog.listFiles().length;
-}
 @Override
 public void run() {
 	int check=catalog.listFiles().length;
